@@ -15,20 +15,28 @@ html {
   //This defines 1rem as 10px where the user has a default font size of 16px
   font-size: 62.5%;
 
-  // @include breakpoint-above(xl) {
-  //   font-size: 66%;
-  // }
-  // @include breakpoint-below(lg) {
-  //   font-size: 55%;
-  // }
-  // @include breakpoint-below(md) {
-  //   font-size: 50%;
-  // }
-  // @include breakpoint-below(sm) {
-  //   font-size: 44%;
-  // }
+  @include breakpoint-above(xs) {
+    font-size: 1rem;
+  }
+  @include breakpoint-above(sm) {
+    font-size: 1.2rem;
+  } 
+  @include breakpoint-above(md) {
+    font-size: 1.4rem;
+  }
+  @include breakpoint-above(lg) {
+    font-size: 1.6rem;
+  }
+  @include breakpoint-above(xl) {
+    font-size: 1.8rem;
+  }
 }
 
 body {
   box-sizing: border-box;
+}
+
+.responsive-img{
+  max-width: 100%;
+  height: auto;
 }
