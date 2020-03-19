@@ -1,0 +1,220 @@
+/***** Text align utilities *****/
+.center-text {
+  text-align: center !important;
+}
+.left-text {
+  text-align: left !important;
+}
+.right-text {
+  text-align: right !important;
+}
+
+/***** Margin utilities *****/
+.mt-lg,
+.my-lg,
+.m-lg {
+  margin-top: 8rem !important;
+
+  @include breakpoint-below(md) {
+    margin-top: 4rem !important;
+  }
+}
+
+.mt-md,
+.my-md,
+.m-md {
+  margin-top: 4rem !important;
+
+  @include breakpoint-below(md) {
+    margin-top: 2rem !important;
+  }
+}
+
+.mt-sm,
+.my-sm,
+.m-sm {
+  margin-top: 1.5rem !important;
+}
+
+.mr-lg,
+.mx-lg,
+.m-lg {
+  margin-right: 8rem !important;
+
+  @include breakpoint-below(md) {
+    margin-right: 4rem !important;
+  }
+}
+
+.mr-md,
+.mx-md,
+.m-md {
+  margin-right: 4rem !important;
+
+  @include breakpoint-below(md) {
+    margin-right: 2rem !important;
+  }
+}
+
+.mr-sm,
+.mx-sm,
+.m-sm {
+  margin-right: 1.5rem !important;
+}
+
+.mb-lg,
+.my-lg,
+.m-lg {
+  margin-bottom: 8rem !important;
+
+  @include breakpoint-below(md) {
+    margin-bottom: 4rem !important;
+  }
+}
+
+.mb-md,
+.my-md,
+.m-md {
+  margin-bottom: 4rem !important;
+
+  @include breakpoint-below(md) {
+    margin-bottom: 2rem !important;
+  }
+}
+
+.mb-sm,
+.my-sm,
+.m-sm {
+  margin-bottom: 1.5rem !important;
+}
+
+.ml-lg,
+.mx-lg,
+.m-lg {
+  margin-left: 8rem !important;
+
+  @include breakpoint-below(md) {
+    margin-left: 4rem !important;
+  }
+}
+
+.ml-md,
+.mx-md,
+.m-md {
+  margin-left: 4rem !important;
+
+  @include breakpoint-below(md) {
+    margin-left: 2rem !important;
+  }
+}
+
+.ml-sm,
+.mx-sm,
+.m-sm {
+  margin-left: 1.5rem !important;
+}
+
+/***** Padding utilities *****/
+.pt-lg,
+.py-lg,
+.p-lg {
+  padding-top: 8rem !important;
+
+  @include breakpoint-below(md) {
+    padding-top: 4rem !important;
+  }
+}
+
+.pt-md,
+.py-md,
+.p-md {
+  padding-top: 4rem !important;
+
+  @include breakpoint-below(md) {
+    padding-top: 2rem !important;
+  }
+}
+
+.pt-sm,
+.py-sm,
+.p-sm {
+  padding-top: 1.5rem !important;
+}
+
+.pr-lg,
+.px-lg,
+.p-lg {
+  padding-right: 8rem !important;
+
+  @include breakpoint-below(md) {
+    padding-right: 4rem !important;
+  }
+}
+
+.pr-md,
+.px-md,
+.p-md {
+  padding-right: 4rem !important;
+
+  @include breakpoint-below(md) {
+    padding-right: 2rem !important;
+  }
+}
+
+.pr-sm,
+.px-sm,
+.p-sm {
+  padding-right: 1.5rem !important;
+}
+
+.pb-lg,
+.py-lg,
+.p-lg {
+  padding-bottom: 8rem !important;
+
+  @include breakpoint-below(md) {
+    padding-bottom: 4rem !important;
+  }
+}
+
+.pb-md,
+.py-md,
+.p-md {
+  padding-bottom: 4rem !important;
+
+  @include breakpoint-below(md) {
+    padding-bottom: 2rem !important;
+  }
+}
+
+.pb-sm,
+.py-sm,
+.p-sm {
+  padding-bottom: 1.5rem !important;
+}
+
+.pl-lg,
+.px-lg,
+.p-lg {
+  padding-left: 8rem !important;
+
+  @include breakpoint-below(md) {
+    padding-left: 4rem !important;
+  }
+}
+
+.pl-md,
+.px-md,
+.p-md {
+  padding-left: 4rem !important;
+
+  @include breakpoint-below(md) {
+    padding-left: 2rem !important;
+  }
+}
+
+.pl-sm,
+.px-sm,
+.p-sm {
+  padding-left: 1.5rem !important;
+}

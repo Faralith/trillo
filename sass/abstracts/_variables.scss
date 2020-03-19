@@ -1,0 +1,40 @@
+// COLOURS
+$primary-colour: #55c57a;
+$primary-colour-light: #7ed56f;
+$primary-colour-dark: #28b485;
+
+$secondary-colour: #4682b4;
+$secondary-colour-light: #2998ff;
+$secondary-colour-dark: #5643fa;
+
+$tertiary-colour: #f85615;
+$tertiary-colour-light: #ffb900;
+$tertiary-colour-dark: #ff7730;
+
+$white: #ffffff;
+$black: #000000;
+
+$grey: #777777;
+$grey-light-1: #f7f7f7;
+$grey-light-2: #eeeeee;
+$grey-dark-1: #999999;
+$grey-dark-2: #333333;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GENERIC
+$border-radius-sm: .5rem;
+$border-radius-md: 2rem;
+$border-radius-lg: 5rem;
+$border-radius-xl: 10rem;
+
+/** Breakpoints
+sm: 576px / 16 = 36em
+md: 768px / 16 = 48em
+lg: 992px / 16 = 62em
+xl: 1200px / 16 = 75em
+Breakpoints ends **/
+
+//Breakpoints for responsive mixins
+$breakpoints: (xs: 0, sm: 36em, md: 48em, lg: 62em, xl: 75em);

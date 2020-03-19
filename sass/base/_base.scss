@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background: $primary-colour;
+  color: $white;
+}
+
+html {
+  //This defines 1rem as 10px where the user has a default font size of 16px
+  font-size: 62.5%;
+
+  // @include breakpoint-above(xl) {
+  //   font-size: 66%;
+  // }
+  // @include breakpoint-below(lg) {
+  //   font-size: 55%;
+  // }
+  // @include breakpoint-below(md) {
+  //   font-size: 50%;
+  // }
+  // @include breakpoint-below(sm) {
+  //   font-size: 44%;
+  // }
+}
+
+body {
+  box-sizing: border-box;
+}
