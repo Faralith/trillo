@@ -1,0 +1,55 @@
+.container-full{
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint-above(sm){
+    max-width: $container-width-sm;
+  }
+  @include breakpoint-above(md){
+    max-width: $container-width-md;
+  }
+  @include breakpoint-above(lg){
+    max-width: $container-width-lg;
+  }
+  @include breakpoint-above(xl){
+    max-width: $container-width-xl;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .column {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.column{
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

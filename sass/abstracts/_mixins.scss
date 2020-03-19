@@ -33,3 +33,42 @@
     @content;
   }
 }
+
+@mixin col-width($value) {
+  @if $value == '1' {
+    flex: 0 0 8.3333333333%; max-width: 8.3333333333%;
+  }
+  @if $value == '2' {
+    flex: 0 0 16.6666666667%; max-width: 16.6666666667%;
+  }
+  @if $value == '3' {
+    flex: 0 0 25%; max-width: 25%;
+  }
+  @if $value == '4' {
+    flex: 0 0 33.3333333333%; max-width: 33.3333333333%;
+  }
+  @if $value == '5' {
+    flex: 0 0 41.6666666667%; max-width: 41.6666666667%;
+  }
+  @if $value == '6' {
+    flex: 0 0 50%; max-width: 50%;
+  }
+  @if $value == '7' {
+    flex: 0 0 58.3333333333%; max-width: 58.3333333333%;
+  }
+  @if $value == '8' {
+    flex: 0 0 66.6666666667%; max-width: 66.6666666667%;
+  }
+  @if $value == '9' {
+    flex: 0 0 75%; max-width: 75%;
+  }
+  @if $value == '10' {
+    flex: 0 0 83.3333333333%; max-width: 83.3333333333%;
+  }
+  @if $value == '11' {
+    flex: 0 0 91.6666666667%; max-width: 91.6666666667%;
+  }
+  @if $value == '12' {
+    flex: 0 0 100%; max-width: 100%;
+  }
+}
