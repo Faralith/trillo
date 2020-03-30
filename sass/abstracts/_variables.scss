@@ -1,18 +1,15 @@
 :root {
-  // Colours
+  //Colours
   --primary-colour: #eb2f64;
   --primary-colour-light: #FF3366;
   --primary-colour-dark: #BA265D;
-
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
   --grey-light-3: #f0eeee;
   --grey-light-4: #ccc;
-  
   --grey-dark-1: #333;
   --grey-dark-2: #777;
   --grey-dark-3: #999;
-
   --white: #ffffff;
   --black: #000000;
 
@@ -23,16 +20,16 @@
   //Border
   --line: 1px solid var(--grey-light-2);
 
-  // font
+  //Font
   --default-font-size: 1.6rem;
 
-  // Container widths
+  //Container widths
   --container-width-xl: 114rem;
   --container-width-lg: 96rem;
   --container-width-md: 72rem;
   --container-width-sm: 54rem;
 
-  // Border radius variables
+  //Border radius variables
   --border-radius-sm: .5rem;
   --border-radius-md: 2rem;
   --border-radius-lg: 5rem;

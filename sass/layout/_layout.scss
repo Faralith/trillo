@@ -14,16 +14,16 @@
   margin-right: auto;
 
   @include breakpoint-above(sm){
-    max-width: $container-width-sm;
+    max-width: var(--container-width-sm);
   }
   @include breakpoint-above(md){
-    max-width: $container-width-md;
+    max-width: var(--container-width-md);
   }
   @include breakpoint-above(lg){
-    max-width: $container-width-lg;
+    max-width: var(--container-width-lg);
   }
   @include breakpoint-above(xl){
-    max-width: $container-width-xl;
+    max-width: var(--container-width-xl);
   }
 }
 
