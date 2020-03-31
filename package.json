@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Faralith/trillo/issues"
   },
-  "homepage": "https://github.com/Faralith/trillo#readme",
+  "homepage": "https://github.com/Faralith/trillo",
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "concat": "^1.0.3",
