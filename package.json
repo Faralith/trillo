@@ -1,18 +1,18 @@
 {
-  "name": "trillo",
+  "name": "Trillo",
   "version": "2.0.0",
   "description": "Pure flexbox website",
   "main": "index.html",
   "scripts": {
     "watch": "node-sass --watch sass/main.scss css/style.css --output-style nested",
-    "live-server": "live-server",
-    "dev": "npm-run-all --parallel live-server watch",
+    "dev-server": "live-server",
+    "dev": "npm-run-all --parallel dev-server watch",
+
     "compile": "node-sass sass/main.scss css/style.comp.css",
-    "concat": "concat -o css/style.concat.css css/style.comp.css",
-    "prefix": "postcss --use autoprefixer -b \"last 5 versions\" css/style.concat.css -o css/style.prefix.css --no-map",
+    "prefix": "postcss --use autoprefixer -b \"last 5 versions\" css/style.comp.css -o css/style.prefix.css --no-map",
     "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "remove": "rm css/style.comp.css css/style.concat.css css/style.prefix.css ",
-    "build": "npm-run-all compile concat prefix compress remove"
+    "remove": "rm css/style.comp.css css/style.prefix.css ",
+    "build": "npm-run-all compile prefix compress remove"
   },
   "repository": {
     "type": "git",
