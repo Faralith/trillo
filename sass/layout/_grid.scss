@@ -59,23 +59,3 @@
 
   min-height: 50rem;
 }
-
-.header {
-  height: 7rem;
-  background-color: var(--white);
-  border-bottom: var(--grey-light-1);
-}
-
-.content {
-  display: flex;
-}
-
-.sidebar {
-  background-color: var(--grey-dark-1);
-  flex: 0 0 18%;
-}
-
-.hotel-view {
-  background-color: var(--white);
-  flex: 1;
-}

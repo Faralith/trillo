@@ -273,12 +273,59 @@ body {
 .p-sm {
   padding-left: 1.5rem !important; }
 
-.logo {
-  height: 3.25rem; }
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: var(--white);
+  border-bottom: var(--grey-light-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s; }
+    .search__input:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--grey-light-3); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--grey-light-4); }
+  .search__input:focus + .search__button {
+    background-color: var(--grey-light-3);
+    right: 3%; }
+  .search__button {
+    position: absolute;
+    border: none;
+    right: 8%;
+    background-color: var(--grey-light-2);
+    transition: all .2s; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--grey-dark-3); }
 
 .user-nav__icon {
   height: 2.25rem;
@@ -287,6 +334,17 @@ body {
 .user-nav__user-photo {
   height: 3.75rem;
   border-radius: 50%; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--grey-dark-1);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: var(--white);
+  flex: 1; }
 
 .container-full {
   width: 100%;
@@ -319,22 +377,6 @@ body {
   background-color: var(--grey-light-2);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
-
-.header {
-  height: 7rem;
-  background-color: var(--white);
-  border-bottom: var(--grey-light-1); }
-
-.content {
-  display: flex; }
-
-.sidebar {
-  background-color: var(--grey-dark-1);
-  flex: 0 0 18%; }
-
-.hotel-view {
-  background-color: var(--white);
-  flex: 1; }
 
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
