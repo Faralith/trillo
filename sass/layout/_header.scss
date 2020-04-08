@@ -1,0 +1,146 @@
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: var(--white);
+  border-bottom: var(--grey-light-1) solid .1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--grey-light-4);
+    }
+  }
+
+  &__input:focus+&__button {
+    background-color: var(--grey-light-3);
+    right: 3%;
+  }
+
+  &__button {
+    position: absolute;
+    border: none;
+    right: 8%;
+    background-color: var(--grey-light-2);
+    transition: all .2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--grey-dark-3);
+  }
+}
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+
+  &>* {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--grey-light-2);
+    }
+  }
+
+  &__icon-box {
+    position: relative;
+
+    &:hover {
+
+      .user-nav__icon,
+      .user-nav__notification {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--grey-dark-2);
+    transition: all .5s;
+  }
+
+  &__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--primary-colour);
+    color: var(--white);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+  }
+
+  &__user {
+    &:hover {
+
+      .user-nav__user-photo,
+      .user-nav__user-name {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: all .5s;
+  }
+
+  &__user-name {
+    transition: all .5s;
+  }
+}
