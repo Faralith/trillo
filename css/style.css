@@ -277,14 +277,14 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: var(--white);
-  border-bottom: var(--grey-light-1);
+  border-bottom: var(--grey-light-1) solid 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem; }
+  margin-left: 2rem; }
 
 .search {
   flex: 0 0 40%;
@@ -327,13 +327,52 @@ body {
     width: 2rem;
     fill: var(--grey-dark-3); }
 
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .user-nav > *:hover {
+      background-color: var(--grey-light-2); }
+  .user-nav__icon-box {
+    position: relative; }
+    .user-nav__icon-box:hover .user-nav__icon,
+    .user-nav__icon-box:hover .user-nav__notification {
+      transform: scale(1.2); }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--grey-dark-2);
+    transition: all .5s; }
+  .user-nav__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--primary-colour);
+    color: var(--white);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s; }
+  .user-nav__user:hover .user-nav__user-photo,
+  .user-nav__user:hover .user-nav__user-name {
+    transform: scale(1.1); }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transition: all .5s; }
+  .user-nav__user-name {
+    transition: all .5s; }
 
 .content {
   display: flex; }
