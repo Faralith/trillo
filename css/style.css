@@ -31,6 +31,17 @@ md: 768px / 16 = 48em
 lg: 992px / 16 = 62em
 xl: 1200px / 16 = 75em
 Breakpoints ends **/
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 *,
 *::after,
 *::before {
@@ -273,16 +284,90 @@ body {
 .p-sm {
   padding-left: 1.5rem !important; }
 
+.btn-inline {
+  border: none;
+  color: var(--primary-colour);
+  font-size: inherit;
+  border-bottom: .1rem solid currentColor;
+  padding-bottom: .2rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s; }
+  .btn-inline:hover {
+    color: var(--grey-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .content {
   display: flex; }
 
 .sidebar {
   background-color: var(--grey-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: var(--white);
   flex: 1; }
+
+.gallery {
+  display: flex; }
+  .gallery__item {
+    position: relative; }
+  .gallery__photo {
+    max-width: 100%;
+    display: block; }
+  .gallery__caption {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: var(--grey-light-4); }
+
+.overview {
+  display: flex;
+  border-bottom: var(--grey-light-2) solid 0.1rem;
+  align-items: center; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--primary-colour); }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; }
+  .overview__icon-location {
+    margin-right: .5rem; }
+  .overview__rating {
+    background-color: var(--primary-colour);
+    margin-left: 3rem;
+    color: var(--white);
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .overview__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -.3rem; }
+  .overview__rating-count {
+    font-size: .8rem;
+    text-transform: uppercase; }
 
 .container-full {
   width: 100%;
@@ -320,7 +405,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: var(--white);
-  border-bottom: var(--grey-light-1) solid 0.1rem;
+  border-bottom: var(--grey-light-2) solid 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -405,7 +490,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s; }
+    transition: all .2s; }
   .user-nav__user:hover .user-nav__user-photo,
   .user-nav__user:hover .user-nav__user-name {
     transform: scale(1.1); }
@@ -416,6 +501,51 @@ body {
     transition: all .5s; }
   .user-nav__user-name {
     transition: all .5s; }
+
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem; }
+  .side-nav__item {
+    position: relative; }
+    .side-nav__item:not(:last-child) {
+      margin-bottom: .5rem; }
+    .side-nav__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--primary-colour);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+  .side-nav__item:hover::before, .side-nav__item--active::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__item:active::before {
+    background-color: var(--primary-colour-light); }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: var(--grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    z-index: 666;
+    position: relative;
+    display: flex;
+    align-items: center; }
+  .side-nav__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor; }
+
+.legal-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--grey-light-4);
+  padding: 2.5rem; }
 
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
