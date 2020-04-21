@@ -314,6 +314,7 @@ body {
   background-color: var(--white);
   flex: 1; }
 
+/*** Gallery section ***/
 .gallery {
   display: flex; }
   .gallery__item {
@@ -328,9 +329,11 @@ body {
     left: 2%;
     color: var(--grey-light-4); }
 
+/*** Gallery section ends ***/
+/*** Overview section ***/
 .overview {
   display: flex;
-  border-bottom: var(--grey-light-2) solid 0.1rem;
+  border-bottom: var(--line);
   align-items: center; }
   .overview__heading {
     font-size: 2.25rem;
@@ -369,6 +372,26 @@ body {
     font-size: .8rem;
     text-transform: uppercase; }
 
+/*** Overview section ends ***/
+/*** Details section ***/
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--grey-light-1);
+  border-bottom: var(--line); }
+
+.description {
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: var(--white);
+  box-shadow: var(--shadow-light);
+  padding: 3rem; }
+
+.user-reviews {
+  flex: 1; }
+
+/*** Details section ends ***/
 .container-full {
   width: 100%;
   padding-left: 1.5rem;
@@ -405,7 +428,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: var(--white);
-  border-bottom: var(--grey-light-2) solid 0.1rem;
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center; }

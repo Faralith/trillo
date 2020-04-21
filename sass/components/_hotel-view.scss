@@ -1,3 +1,4 @@
+/*** Gallery section ***/
 .gallery{
   display: flex;
 
@@ -18,10 +19,12 @@
     color: var(--grey-light-4);
   }
 }
+/*** Gallery section ends ***/
 
+/*** Overview section ***/
 .overview{
   display: flex;
-  border-bottom: var(--grey-light-2) solid .1rem;
+  border-bottom: var(--line);
   align-items: center;
 
   &__heading{
@@ -77,3 +80,26 @@
     text-transform: uppercase;
   }
 }
+/*** Overview section ends ***/
+
+/*** Details section ***/
+.detail {
+  display: flex;
+  padding:4.5rem;
+  background-color: var(--grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  font-size: 1.4rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: var(--white);
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+}
+
+.user-reviews {
+  flex: 1;
+}
+/*** Details section ends ***/
