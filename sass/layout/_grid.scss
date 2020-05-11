@@ -58,4 +58,10 @@
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  @include breakpoint-below(xl) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }

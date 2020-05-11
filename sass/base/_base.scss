@@ -15,6 +15,10 @@ html {
   //This defines 1rem as 10px where the user has a default font size of 16px
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @include breakpoint-below(xl) {
+    font-size: 50%;
+  }
 }
 
 body {

@@ -124,9 +124,13 @@
   justify-content: space-between;
   align-items: center;
 
-  &__count {}
+  &__count {
+    margin-right: auto;
+  }
 
-  &__friends {}
+  &__friends {
+    display: flex;
+  }
 
   &__photo {
     box-sizing: content-box;
@@ -137,6 +141,10 @@
 
     &:not(:last-child){
       margin-right: -2rem;
+
+      @include breakpoint-below(md) {
+        margin-right: -2.5rem;
+      }
     }
   }
 }
@@ -147,9 +155,14 @@
   background-color: var(--white);
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+  @include breakpoint-below(md) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -209,6 +222,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @include breakpoint-below(md) {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 2rem;
