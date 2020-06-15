@@ -26,6 +26,7 @@
   --border-radius-xl: 10rem; }
 
 /** Breakpoints
+xs: 448px / 16 = 28em
 sm: 576px / 16 = 36em
 md: 768px / 16 = 48em
 lg: 992px / 16 = 62em
@@ -334,6 +335,9 @@ body {
   @media only screen and (max-width: 48em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 36em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   flex: 0 0 60%;
@@ -346,6 +350,10 @@ body {
     .description {
       padding: 2rem;
       margin-right: 2rem; } }
+  @media only screen and (max-width: 36em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -381,6 +389,10 @@ body {
     text-transform: uppercase;
     letter-spacing: .1rem;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 36em) {
+      .overview__heading {
+        font-size: 1.75rem;
+        padding: 1.25rem 2rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -404,13 +416,22 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    @media only screen and (max-width: 36em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -.3rem; }
+    @media only screen and (max-width: 36em) {
+      .overview__rating-average {
+        font-size: 1.8rem; } }
   .overview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 36em) {
+      .overview__rating-count {
+        font-size: .5rem; } }
 
 /*** Overview section ends ***/
 /*** Details section ***/
@@ -428,6 +449,9 @@ body {
   .list__item {
     flex: 0 0 50%;
     margin-bottom: .7rem; }
+  @media only screen and (max-width: 36em) {
+    .list__item:nth-child(even) {
+      padding-left: 20px; } }
   .list__item::before {
     content: "";
     display: inline-block;
@@ -519,7 +543,7 @@ body {
   text-align: center; }
   @media only screen and (max-width: 48em) {
     .cta {
-      padding: 2.5rem 0; } }
+      padding: 2.5rem 2.5rem; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
@@ -605,6 +629,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 28em) {
+    .header {
+      flex-wrap: wrap;
+      height: 11rem; } }
 
 .logo {
   height: 3.25rem;
@@ -616,6 +644,10 @@ body {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media only screen and (max-width: 28em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -745,11 +777,21 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 36em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 36em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal-text {
   font-size: 1.2rem;

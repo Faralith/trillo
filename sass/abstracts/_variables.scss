@@ -37,6 +37,7 @@
 }
 
 /** Breakpoints
+xs: 448px / 16 = 28em
 sm: 576px / 16 = 36em
 md: 768px / 16 = 48em
 lg: 992px / 16 = 62em
@@ -44,4 +45,4 @@ xl: 1200px / 16 = 75em
 Breakpoints ends **/
 
 //Breakpoints for responsive mixins
-$breakpoints: (xs: 0, sm: 36em, md: 48em, lg: 62em, xl: 75em);
+$breakpoints: (xs: 28em, sm: 36em, md: 48em, lg: 62em, xl: 75em);

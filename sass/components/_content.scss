@@ -29,6 +29,10 @@
   @include breakpoint-below(md) {
     padding: 3rem;
   }
+
+  @include breakpoint-below(sm) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -42,6 +46,11 @@
   @include breakpoint-below(md) {
     padding: 2rem;
     margin-right: 2rem;
+  }
+
+  @include breakpoint-below(sm) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
